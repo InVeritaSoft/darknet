@@ -55,8 +55,8 @@ Thumbs.db
 *.swp
 
 # IDE generated #
-.vs/
-.vscode/
+# .vs/
+# .vscode/
 
 # Managed by CMake
 src/version.h
