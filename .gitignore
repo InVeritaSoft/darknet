@@ -70,3 +70,7 @@ uselib_track
 darknet
 kmeansiou
 vcpkg/
+
+# Custom files
+custom/images
+custom/videos

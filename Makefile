@@ -1,7 +1,7 @@
-GPU=0
+GPU=1
 CUDNN=0
 CUDNN_HALF=0
-OPENCV=0
+OPENCV=1
 AVX=0
 OPENMP=0
 LIBSO=0
@@ -17,9 +17,9 @@ ZED_CAMERA_v2_8=0
 USE_CPP=0
 DEBUG=0
 
-ARCH= -gencode arch=compute_50,code=[sm_50,compute_50] \
-      -gencode arch=compute_52,code=[sm_52,compute_52] \
-	    -gencode arch=compute_61,code=[sm_61,compute_61]
+# ARCH= -gencode arch=compute_50,code=[sm_50,compute_50] \
+#       -gencode arch=compute_52,code=[sm_52,compute_52] \
+# 	    -gencode arch=compute_61,code=[sm_61,compute_61]
 
 OS := $(shell uname)
 
@@ -60,7 +60,7 @@ OS := $(shell uname)
 # ARCH= -gencode arch=compute_80,code=[sm_80,compute_80]
 
 # GeForce RTX 30x0, 30x0 Ti, Tesla GA10x, RTX Axxxx, A2, A10, A16, A40
-# ARCH= -gencode arch=compute_86,code=[sm_86,compute_86]
+ARCH= -gencode arch=compute_86,code=[sm_86,compute_86]
 
 # NOT TESTED, THEORETICAL
 # Jetson ORIN, ORIN NX, ORIN NANO
