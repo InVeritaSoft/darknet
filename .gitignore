@@ -74,3 +74,4 @@ vcpkg/
 # Custom files
 custom/images
 custom/videos
+custom/results
